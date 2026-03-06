@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dice Game</title>
+    <link rel="icon" href="Dice/die_6.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <p class="title">5 Dice</p>
+
+    <button onclick="changeDiceAmount('add')">⇧</button>
+    <p class="diceAmountDisplay">5 Dice</p>
+    <button onclick="changeDiceAmount('remove')">⇩</button>
+
+    <br>
+    <button class="rollDice" onclick="rollDice()">Roll Dice</button>
+
+    <div class="diceRow1 diceRow"></div>
+    <div class="diceRow2 diceRow"></div>
+
+  <script src="javascript.js"></script>
+  </body>
+</html>
