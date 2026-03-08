@@ -1,6 +1,7 @@
 const diceAmountDisplay = document.querySelector('.diceAmountDisplay');
 const diceRow1 = document.querySelector('.diceRow1');
 const diceRow2 = document.querySelector('.diceRow2');
+const diceRow3 = document.querySelector('.diceRow3');
 let diceAmount = 5;
 let randomNum = 0;
 let dice = 1;
@@ -29,24 +30,25 @@ function changeDiceAmount(change) {
 function rollDice() {
   diceRow1.innerHTML = '';
   diceRow2.innerHTML = '';
+  diceRow3.innerHTML = '';
   chooseRandomDie();
-  diceRow1.innerHTML += `<img class="diceIMG" src="Dice/die_${dice}.png">`
+  diceRow1.innerHTML += `<img class="diceIMG" src="Dice/die_${dice}.png">`;
   if (diceAmount === 1) {return}
 
   chooseRandomDie();
-  diceRow1.innerHTML += `<img class="diceIMG" src="Dice/die_${dice}.png">`
+  diceRow1.innerHTML += `<img class="diceIMG" src="Dice/die_${dice}.png">`;
   if (diceAmount === 2) {return}
 
   chooseRandomDie();
-  diceRow1.innerHTML += `<img class="diceIMG" src="Dice/die_${dice}.png">`
+  diceRow2.innerHTML += `<img class="diceIMG" src="Dice/die_${dice}.png">`;
   if (diceAmount === 3) {return}
 
   chooseRandomDie();
-  diceRow2.innerHTML += `<img class="diceIMG" src="Dice/die_${dice}.png">`
+  diceRow2.innerHTML += `<img class="diceIMG" src="Dice/die_${dice}.png">`;
   if (diceAmount === 4) {return}
 
   chooseRandomDie();
-  diceRow2.innerHTML += `<img class="diceIMG" src="Dice/die_${dice}.png">`
+  diceRow3.innerHTML += `<img class="diceIMG" src="Dice/die_${dice}.png">`;
 }
 
 
